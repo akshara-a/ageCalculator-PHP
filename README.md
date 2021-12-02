@@ -1,5 +1,5 @@
 This is a simple calculator developed using PHP that calculates your age!
-Features included -
+
   1. Calculate age in years
   2. Calculate age in months
   3. Calculate age in weeks
