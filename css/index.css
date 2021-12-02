@@ -1,0 +1,128 @@
+/* Navbar */
+@media (min-width: 992px){
+    .navbar-expand-lg .navbar-collapse {
+        display: flex!important;
+        flex-basis: auto;
+        justify-content: flex-end;
+    }
+}
+.nav-item{
+    padding: 5px 20px;
+}
+.navbar{
+    background-color: #91fffa;
+    font-size: 17px;
+}
+/* Font */
+body{
+    font-family: 'Cairo', sans-serif;
+}
+/* General styles */
+.titleStyle{
+    text-align: center;
+    margin: 40px 0px 20px 0px;
+}
+.buttonSubmit, .buttonReset{
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+    background-color: #91fffa;
+    font-size: 20px;
+}
+input.buttonSubmit:hover, input.buttonReset:hover {
+    background-color: #91fffa61;
+    color: #6d6d6de6;
+}
+/* Main content */
+@media (min-width:320px)  { 
+    /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
+    .mainContent{
+        margin: 0 auto;
+        width: 300px;
+    }
+    .buttonSubmit{
+        width: 300px;
+        margin: 10px 0px;
+    }
+    .buttonReset{
+        width: 300px;
+        margin: 10px 0px;
+    }
+    input[type="date"]{
+        width: 300px;
+        padding: 15px 10px;
+        margin: 25px 0px 10px;
+        border-radius: 5px;
+        border: none;
+        background-color: #b5d6f33b;
+    }
+}
+@media (min-width:420px)  { 
+    /* smartphones, Android phones, landscape iPhone */ 
+    .mainContent{
+        margin: 0 auto;
+        width: 400px;
+    }
+    .buttonSubmit{
+        width: 400px;
+        margin: 10px 0px;
+    }
+    input[type="date"]{
+        width: 400px;
+        padding: 15px 10px;
+        margin: 25px 0px 10px;
+        border-radius: 5px;
+        border: none;
+        background-color: #b5d6f33b;
+    }
+    .buttonReset{
+        width: 400px;
+        margin: 10px 0px;
+    }
+}
+@media (min-width:600px)  { 
+    /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ 
+    .mainContent{
+        margin: 0 auto;
+        width: 580px;
+    }
+    input[type="date"]{
+        width: 580px;
+        padding: 15px 10px;
+        margin: 25px 0px 10px;
+        border-radius: 5px;
+        border: none;
+        background-color: #b5d6f33b;
+    }
+    .buttonSubmit{
+        width: 400px;
+        margin: 10px 0px;
+    }
+    .buttonReset{
+        width: 175px;
+        margin: 10px 0px;
+    }
+}
+@media (min-width:801px)  { 
+    /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+    .mainContent{
+        margin: 0 auto;
+        width: 700px;
+    }
+    input[type="date"]{
+        width: 700px;
+        padding: 15px 10px;
+        margin: 20px 0px 10px;
+        border-radius: 5px;
+        border: none;
+        background-color: #b5d6f33b;
+    }
+    .buttonSubmit{
+        width: 500px;
+        margin: 20px 0px;
+    }
+    .buttonReset{
+        width: 195px;
+        margin: 20px 0px;
+    }
+}
