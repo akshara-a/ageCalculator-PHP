@@ -11,6 +11,6 @@ Features included -
   9. Birthday note
   10. Download report
 
-Languages - HTML, CSS, JS, PHP
-Framework - Bootstrap
-Library - JQuery
+  1. Languages - HTML, CSS, JS, PHP
+  2. Framework - Bootstrap
+  3. Library - JQuery
