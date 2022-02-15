@@ -23,16 +23,19 @@
 </head>
 <body>
     <h1 class="titleStyle"> Result </h1>
+    
     <div class="topStyle">
         <!-- Display the age in years, months, and days -->
         <?php echo $ageY; ?> years, <?php echo $ageM; ?> months, <?php echo $ageD; ?> days
     </div>
+    
     <div style="text-align: center; font-size:20px; color:#4da3a3">
       <marquee direction="right">
       <i class="fas fa-birthday-cake icon-3x"></i>
       <?php echo $BWnote ?>
       </marquee>
     </div>
+    
     <div id="content">
         <table cellspacing="0px">
             <tr>
@@ -73,16 +76,20 @@
             </tr>
           </table>
     </div>
+
     <div class="buttonDiv">
         <input type="button" value="Go Back" class="buttonBack" onclick="goBack()" />
         <a class="aStyle" href="./index.php"> <input type="button" class="buttonNew" value="Start a New Search" /> </a> 
         <input type="button" id="download" value="Download report" class="buttonDownload"/>
       </div>
+
+      <!-- Internal JS -->
       <script>
         // Reaching previous page
         function goBack() {
           window.history.back() 
         }
+          
         // Downloading report in pdf
         // JSPDF is an open-source library for generating PDF documents using nothing but JavaScript.
         var doc = new jsPDF();
