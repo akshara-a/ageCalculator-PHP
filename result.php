@@ -24,6 +24,7 @@
 <body>
     <h1 class="titleStyle"> Result </h1>
     <div class="topStyle">
+        <!-- Display the age in years, months, and days -->
         <?php echo $ageY; ?> years, <?php echo $ageM; ?> months, <?php echo $ageD; ?> days
     </div>
     <div style="text-align: center; font-size:20px; color:#4da3a3">
@@ -80,8 +81,10 @@
       <script>
         // Reaching previous page
         function goBack() {
-          window.history.back()
+          window.history.back() 
         }
+        // Downloading report in pdf
+        // JSPDF is an open-source library for generating PDF documents using nothing but JavaScript.
         var doc = new jsPDF();
         doc.setFontSize(20);
         doc.setFontStyle('Courier');
@@ -91,7 +94,6 @@
                 return true;
             }
         };
-        // Downloading report in pdf
         $('#download').click(function () {
             doc.fromHTML($('#content').html(), 15, 15, {
                 'width': 170,
